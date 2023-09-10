@@ -15,6 +15,8 @@ with open(model_path, 'rb') as file:
 
 st.title('Customer Lifetime Value Predictor - it worked!')
 
+st.sidebar.title('This is side bar!')
+
 # Take user inputs
 avg_monthly_spend = st.number_input('Average Monthly Spend', min_value=0.0, max_value=10000.0, step=0.1)
 purchase_frequency = st.number_input('Purchase Frequency', min_value=0.0, max_value=100.0, step=0.1)
